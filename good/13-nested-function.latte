@@ -1,0 +1,19 @@
+void foo() {
+    print("From foo");
+    return;
+}
+
+void test_function() {
+    {
+        void foo() {
+            print("From nested foo");
+            return;
+        }
+
+        foo();
+    };
+    foo();
+    return;
+}
+
+test_function(); // shold print "From nested foo" than "From foo"

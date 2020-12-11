@@ -1,0 +1,13 @@
+int a = 5;
+int b = 5;
+
+void addOne( int & a, int b) {
+    a = a + 1; 
+    b++;
+        return;
+}
+
+addOne(a,b);
+
+print(a); // should print 6
+print(5); //should print 5

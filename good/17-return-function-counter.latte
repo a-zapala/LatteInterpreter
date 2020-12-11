@@ -1,0 +1,20 @@
+
+() -> int   giveCounter(int start) {
+    int counter(){
+        int ret = start;
+        start++;
+        return ret;
+    }
+
+    return counter;
+}
+
+() -> int counter1 = giveCounter(100);
+() -> int counter2 = giveCounter(10);
+
+print(counter1()); // shouold print 100
+print(counter1()); // shouold print 101
+print(counter2()); // shouold print 10
+print(counter1()); // shouold print 102
+print(counter2()); // shouold print 11
+

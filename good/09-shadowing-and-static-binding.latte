@@ -1,0 +1,18 @@
+int a = 4;
+int b = 3;
+
+void foo(){
+    int b = 2;
+    a++;
+    print(a);
+    print(b);
+    return;
+}
+
+a = 100;
+b = 200;
+
+foo(); //Should print 5 and 2
+
+print(a); // Should print 100 and 200
+print(b);

@@ -1,0 +1,21 @@
+int fib(int n) {
+    if (n > 1) {
+        return fib(n-1) + fib (n - 2);
+    } else {
+        return n;
+    }
+}
+
+print("Dzisiata liczba fibonaciego to:");
+print(fib(10));
+
+int factorial(int n) {
+    if (n>1) {
+        return n * factorial(n-1);
+    } else {
+        return 1;
+    }
+}
+
+print("Silnia z 10 to:");
+print(factorial(10));
